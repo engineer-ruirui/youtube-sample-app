@@ -35,7 +35,7 @@
             <v-list-item
             style="padding:0;">
               <v-list-item-content>
-                <v-list-item-title class="" style="font-size: 24px; font-weight:bold;">東海オンエア</v-list-item-title>
+                <v-list-item-title class="" style="font-size: 24px;">東海オンエア</v-list-item-title>
                 <v-list-item-subtitle>チャンネル登録者数XX人</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
