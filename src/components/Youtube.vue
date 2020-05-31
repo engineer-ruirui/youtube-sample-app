@@ -4,6 +4,7 @@
     class="fill-height"
     style="background-color:#fcfcfc;"
     >
+      <!-- ヘッダー画像 -->
       <v-row
         justify="center"
         align="center"
@@ -14,9 +15,10 @@
         ></v-img>
       </v-row>
 
+      <!-- チャンネルアイコン -->
       <v-row
         justify="center"
-        align="end"
+        align="center"
       >
         <v-col
           cols="auto"
@@ -40,30 +42,45 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
-
+        </v-col>
+        <v-col
+        cols="auto"
+          >
+          <v-btn color="error">Error</v-btn>
         </v-col>
       </v-row>
 
+      <v-tabs v-model="model">
+        <v-tab href="#test1">
+          ホーム
+        </v-tab>
+        <v-tab href="#test2">
+          動画
+        </v-tab>
+        <v-tab href="#test3">
+          XXX
+        </v-tab>
+      </v-tabs>
 
-      <Card/>
-      <!-- <v-row
-        justify="start"
-        align="start"
-      >
-      <v-col>
-        <Card/>
-      </v-col>
-      </v-row> -->
+      <v-tabs-items v-model="model" fixed-tabs="true">
+        <v-tab-item value="test1">
+          <!-- 動画 -->
+          <v-row>
+            <v-col>
+              アップロード動画
+            </v-col>
+          </v-row>
+          <Card/>
+        </v-tab-item>
+        <v-tab-item value="test2">
+          test
+        </v-tab-item>
+      </v-tabs-items>
 
-      <!-- <v-row
-        justify="start"
-        align="start"
-      >
-        <Card/>
-        <Card/>
-        <Card/>
-      </v-row> -->
 
+
+
+      <!-- 不要 -->
       <v-row
         justify="center"
         align="center"
@@ -98,6 +115,11 @@ import Card from './Card';
     },
     props: {
       source: String,
+    },
+    data () {
+      return {
+        model: 'tab-1'
     }
+  }
   }
 </script>

@@ -19,7 +19,7 @@
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-      <v-subheader class="mt-4 grey--text text--darken-1">SUBSCRIPTIONS</v-subheader>
+      <v-subheader class="mt-4 grey--text text--darken-1">登録チャンネル</v-subheader>
       <v-list>
         <v-list-item
           v-for="item in items2"
@@ -28,7 +28,7 @@
         >
           <v-list-item-avatar>
             <img
-              :src="`https://randomuser.me/api/portraits/men/${item.picture}.jpg`"
+              :src="`${item.picture}`"
               alt=""
             >
           </v-list-item-avatar>
@@ -69,8 +69,8 @@
         { icon: 'mdi-clock', text: 'Watch Later' },
       ],
       items2: [
-        { picture: 28, text: 'Joseph' },
-        { picture: 38, text: 'Apple' },
+        { picture: 'https://yt3.ggpht.com/a/AATXAJyL85STIntBttIC1v57dKa9sqybrq2_xfBRIw=s240-c-k-c0xffffffff-no-rj-mo', text: '東海オンエア' },
+        { picture: 38, text: '東海オンエア' },
         { picture: 48, text: 'Xbox Ahoy' },
         { picture: 58, text: 'Nokia' },
         { picture: 78, text: 'MKBHD' },

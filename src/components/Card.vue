@@ -1,6 +1,5 @@
 <template>
   <v-row
-    class="mb-6"
   >
     <v-col
       v-for="item in items"
@@ -18,13 +17,6 @@
         :src="item.thumbnailUrl"
         height="194"
       ></v-img>
-
-      <!-- <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title class="">【大貸切】真夜中のイオンモールで警備員から逃げながら隠された私物を探し出せ！！</v-list-item-title>
-          <v-list-item-subtitle>東海オンエア</v-list-item-subtitle>
-        </v-list-item-content>
-      </v-list-item> -->
 
       <v-card-title>{{item.title}}</v-card-title>
       <v-card-subtitle>東海オンエア</v-card-subtitle>
